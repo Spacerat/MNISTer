@@ -1,0 +1,4 @@
+scikit-learn>=0.18.1
+scipy>=0.18.1
+Flask>=0.12
+Flask-Caching>=1.1.1

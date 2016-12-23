@@ -1,0 +1,28 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+div.main {
+	background-color: #EEE;
+	width: 800px;
+	margin: auto;
+	margin-top: 100px;
+	padding: 30px;
+	font-family: sans-serif;
+	text-align: center;
+}
+input {
+	font-size: large;
+}
+div.images img {
+	margin-left: 47.6px;
+	margin-right: 47.6px;
+}
+div.error {
+	margin-top: 30px;
+	background-color: #FAA;
+	padding: 10px;
+}
+div.result {
+	font-size: 40px;
+}

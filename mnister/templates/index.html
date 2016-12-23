@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+	<title>Simple MNIST classifier</title>
+</head>
+<body>
+	<div class="main">
+		<div class="images">
+		{% for img_url in numbers %}
+			<img src="{{ img_url }}">
+		{% endfor %}
+		</div>
+		<h1>Simple MNIST classifier</h1>
+		<p>Please use this form to upload a 28x2x PNG file of a digit.</p>
+		<form method="POST" action='/mnist/classify' enctype='multipart/form-data'>
+			<input type='file' id='image' name='image' accept="image/png" />
+			<input type="submit" name="submit">
+		</form>
+		{% if error %}
+		<div class='error'>
+			Error: {{ error }}
+		</div>
+		{% endif %}
+		{% if result %}
+		<br>
+		<div class='result'>
+			You uploaded a {{result}}
+		</div>
+		{% endif %}
+	</div>
+</body>
+</html>
