@@ -9,11 +9,16 @@ First install the required libraries (Scikit-Learn, SciPy, Flask, Flask-Caching)
 	$ pip install -r requirements.txt
 
 ### Running
+Then there are two ways to run the server:
 #### With the Flask CLI
-Then there are two ways to run the server. The first is to use the [flask CLI](http://flask.pocoo.org/docs/0.12/cli/). Open a terminal in the directory of `server.py` and run the following commands:
+The flask-recommended way is to use the [flask CLI](http://flask.pocoo.org/docs/0.12/cli/). Open a terminal in the directory of `server.py` and run the following commands:
 
     $ export FLASK_APP=server.py
     $ flask run
+
+You can also toggle debug mode (which is off by default):
+
+	$ export FLASK_DEBUG=1
 
 #### Manually
 
