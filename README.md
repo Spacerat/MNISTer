@@ -1,6 +1,6 @@
 # MNISTer
 
-A simple web service for classifying MNIST digits with reasonable-ish accuracy. Only tested with Python 3.
+A simple web service for classifying MNIST digits with reasonable-ish accuracy. Only tested with Python 3 on Mac OS.
 
 ## Instructions
 ### Installation
