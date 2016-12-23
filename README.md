@@ -21,8 +21,6 @@ You can run the server directly with python:
 
     $ python server.py
 
-If you do this when the model file is not present, `flask init` will be run on the first request and it will run much slower because it won't be able to use multiple cores.
-
 ### Rebuilding the ML model
 
 The entire pre-trained ML model is stored as a pickled Python object in `mnister/lib/model.pkl`. If you choose to rebuild it, you need to delete or move the file and then run:
